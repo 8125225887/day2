@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+table, td {
+    border: 1px solid black;
+    position: center;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to add a new Random value</p>
+
+<table id="myTable">
+  <tr>
+    <td>Row1 cell1</td>
+    <td>Row1 cell2</td>
+  </tr>
+
+</table>
+<br>
+
+<button onclick="myFunction()">Click Here</button>
+
+<script>
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = Math.random();
+    cell2.innerHTML = Math.random();
+}
+</script>
+
+</body>
+</html>
